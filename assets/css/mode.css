@@ -1,0 +1,41 @@
+body.dark {
+    background-color: rgb(2, 2, 27);
+}
+
+body.light {
+    background-color: rgb(255, 248, 234);
+}
+button {
+    padding: 11px 12px;
+    border: 30px;
+    cursor: pointer;
+    font-size: small;
+    margin: 40px;
+    border-radius: 30px;
+}
+
+button.light-mode-btn{
+    background-color: black;
+    color: white;
+}
+
+button.dark-mode-btn{
+    background-color: white;
+    color: black;
+}
+
+
+.light{
+    color: #333;
+}
+.dark{
+    color: #ffffff;
+}
+/* smooth transition */
+#logo { transition: filter .2s ease; }
+
+/* make the black "S" turn white in dark mode */
+body.dark #logo { filter: invert(1); }
+/* optional: keep outline crisp on very dark bg */
+/* body.dark #logo { filter: invert(1) hue-rotate(180deg) contrast(1.05); } */
+
