@@ -2,7 +2,7 @@
 body{
     transition: background-color 0.3s, color 0.3s;
     background-color: rgb(255, 248, 234);
-    color: black;
+    color: #02021b;
 }
 .content-container {
     max-width: 800px;
@@ -25,4 +25,54 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.projectCard{
+    float: left;
+    display: flexbox;
+    width: 400px;
+    height: 60px;
+    padding: 20px;
+
+}
+.projectCard img{
+    display: inline-block;
+    width: 320px;
+    height: 180px;
+    border: 10px solid #ffffff;
+}
+
+.projectCard:hover{
+    width: 440px;
+    height: 66px;
+    font-size: 1.32rem;
+    transition: ease 0.2s;
+    padding: 22px;
+}
+
+.projectCard:hover img{
+    width: 352px;
+    height: 198px;
+    transition: ease 0.2s 
+}
+
+.projectCard a{
+    text-decoration: none;
+    
+}
+.projectCard a:visited{
+    text-decoration: none;
+    
+}
+
+.projectCard a:link{
+    text-decoration: none;
+    
+}
+
+.projectContainer{
+    display: inline;
+}
+
+.projectCard:hover img{
+  box-shadow: 0 8px 18px currentColor; /* same color as border */
 }
